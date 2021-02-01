@@ -13,8 +13,9 @@ jobs:
           submodules: true
           
       - name: Set Environment
-        run: wget https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Linux-64bit.tar.gz
-             && tar -xzvf hugo_0.80.0_Linux-64bit.tar.gz
+        run: |
+             wget https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Linux-64bit.tar.gz
+             tar -xzvf hugo_0.80.0_Linux-64bit.tar.gz
       - name: Build
         run: ./hugo
       - name: SSH Server Deploy
