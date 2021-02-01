@@ -47,7 +47,7 @@ theme = "LoveIt"
 
   #  搜索配置
   [params.search]
-    enable = true
+    enable = false
     # 搜索引擎的类型 ("lunr", "algolia")
     type = "lunr"
     # 文章内容最长索引长度
