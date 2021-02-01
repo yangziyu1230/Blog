@@ -19,7 +19,7 @@ public class Main {
 ```
 
 ### Calendar
-```Calendar```可以进行简单的日期计算
+`Calendar`可以进行简单的日期计算
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -37,7 +37,7 @@ public class Main {
     }
 }
 ```
-只可用```Calendar.getInstance()```来获取```Calendar```，如要设置成特定时间，需要先清除所有字段
+只可用`Calendar.getInstance()`来获取`Calendar`，如要设置成特定时间，需要先清除所有字段
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -60,14 +60,15 @@ public class Main {
     }
 }
 ```
-利用```Calendar.getTime(```)可以将一个```Calendar```对象转换成```Date```对象，然后就可以用```SimpleDateFormat```进行格式化
+利用`Calendar.getTime()`可以将一个`Calendar`对象转换成`Date`对象，然后就可以用`SimpleDateFormat`进行格式化
 
 
 ### LocalDateTime
-```LocalDateTime```为时间日期新接口，可以替代Date使用
+`LocalDateTime`为时间日期新接口，可以替代Date使用
 ```java
 public class Main {
     public static void main(String[] args) {
+        // 获取当前时间
         LocalDateTime dateTime = LocalDateTime.now();
         var dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         System.out.println(dtf.format(dateTime));
