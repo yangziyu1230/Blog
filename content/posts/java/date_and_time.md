@@ -61,3 +61,16 @@ public class Main {
 }
 ```
 利用```Calendar.getTime(```)可以将一个```Calendar```对象转换成```Date```对象，然后就可以用```SimpleDateFormat```进行格式化
+
+
+### LocalDateTime
+```LocalDateTime```为时间日期新接口，可以替代Date使用
+```java
+public class Main {
+    public static void main(String[] args) {
+        LocalDateTime dateTime = LocalDateTime.now();
+        var dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        System.out.println(dtf.format(dateTime));
+    }
+}
+```
