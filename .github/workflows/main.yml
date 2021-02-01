@@ -1,0 +1,31 @@
+name: CI #自动化的名称
+on:
+  push: # push的时候触发
+    branches: # 那些分支需要触发
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest # 镜像市场
+    steps:
+      - name: checkout # 步骤的名称
+        uses: actions/checkout@v1 #软件市场的名称
+        with: # 参数
+          submodules: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.2.2
+        with:
+          hugo-version: '0.64.1'
+          extended: true
+      - name: Build
+        run: hugo
+      - name: SSH Server Deploy
+        uses: kostya-ten/ssh-server-deploy@v4
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          port: ${{ secrets.SERVER_PORT }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          scp_source: README.md
+          scp_target: /etc/nginx/smartyzy/
+          before_script: |
+            rm -rf /etc/nginx/smartyzy/*
