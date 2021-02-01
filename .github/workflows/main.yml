@@ -13,7 +13,7 @@ jobs:
           submodules: true
           
       - name: Set Environment
-        run: echo true >> $ACTIONS_ALLOW_UNSECURE_COMMANDS
+        run: echo "true" >> $ACTIONS_ALLOW_UNSECURE_COMMANDS
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.2.2
         with:
