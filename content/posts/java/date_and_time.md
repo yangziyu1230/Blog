@@ -69,6 +69,7 @@ public class Main {
 public class Main {
     public static void main(String[] args) {
         // 获取当前时间
+        // test
         var dateTime = LocalDateTime.now();
         var dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         System.out.println(dtf.format(dateTime));
