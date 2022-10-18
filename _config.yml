@@ -1,0 +1,139 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 末流211的垃圾毕业生
+subtitle: ''
+description: '末流211的垃圾毕业生'
+keywords:
+author: Ziyu Yang
+language: en
+timezone: ''
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://classloader.cn
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: zh-CN
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: false
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: volantis
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  # type: sftp
+  # host: 
+  # user: 
+  # pass: 
+  remotePath: /home/ubuntu/nginx/html
+  port: 22
+  # privateKey: [path/to/privateKey]
+  # passphrase: [passphrase]
+  # agent: [path/to/agent/socket]
+
+import:
+  head_begin:
+    - <meta name="msapplication-TileColor" content="#ffffff">
+    - <meta name="msapplication-config" content="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/browserconfig.xml">
+    - <meta name="theme-color" content="#ffffff">
+    - <link rel="apple-touch-icon" sizes="180x180" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/apple-touch-icon.png">
+    - <link rel="icon" type="image/png" sizes="32x32" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/favicon-32x32.png">
+    - <link rel="icon" type="image/png" sizes="16x16" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/favicon-16x16.png">
+    - <link rel="manifest" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/site.webmanifest">
+    - <link rel="mask-icon" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    - <link rel="shortcut icon" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/favicon.ico">
+    - <meta name="apple-mobile-web-app-title" content="Volantis">
+    - <meta name="application-name" content="Volantis">
+    - <meta name="msapplication-TileColor" content="#f4f4f4">
+    - <meta name="msapplication-TileImage" content="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/favicon-32x32.png">
+    - '<meta name="theme-color" content="#f4f4f4" media="(prefers-color-scheme: light)">'
+    - '<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">'
+    - '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.css" integrity="sha384-1IGr2Yb8xuHjwTG+WoGjj2+I/a/N6z0gDD5YIGCQxywPROOKc3+orbn/R7arWQxD" crossorigin="anonymous">'
+    - '<script src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.js" integrity="sha384-I2b1Pcl48X93GxEkGkaMo1hrd6n+IX8H2wgSsMimGbkZoGTve/87h1FjaDNvlpQi" crossorigin="anonymous"></script>'
+    - '<link href="https://unpkg.com/artalk@2.4.2/dist/Artalk.css" rel="stylesheet">'
+    - '<script src="https://unpkg.com/artalk@2.4.2/dist/Artalk.js"></script>'
+  head_end:
+  body_begin:
+  body_end:
