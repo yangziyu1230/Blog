@@ -141,7 +141,7 @@ _Size __depth_limit, _Compare __comp)
 我们可以看到这是一个递归函数。我们会通过某些操作将序列以__cut为界限分割为两部分，对其中[__cut, __last)进行递归调用，同时将__last左移（第25行__last = __cut），使用while循环继续对左半部分进行处理。
 此处在处理[__first, __cut)区间时并没有像[__cut, __last)一样进行递归调用，原因在于使用循环处理可以有效减少函数调用次数，减少开销。如下图所是都通过递归调用和__introsort_loop实现的具体过程：
 
-![](https://blog-1255608703.cos.ap-nanjing.myqcloud.com/stl-sort/__introsort_loop.png)
+![](https://blog-1255608703.cos.ap-hongkong.myqcloud.com/stl-sort/__introsort_loop.png)
 
 我们可以看到使用右边的方式可以减少一半的递归调用。若数据量非常庞大，节省的函数调用开销会非常可观。
 现在先忽略while和if的条件，先看看__unguarded_partition_pivot是怎么实现的：

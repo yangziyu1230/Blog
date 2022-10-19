@@ -116,18 +116,18 @@ deploy:
 import:
   head_begin:
     - <meta name="msapplication-TileColor" content="#ffffff">
-    - <meta name="msapplication-config" content="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/browserconfig.xml">
+    - <meta name="msapplication-config" content="https://blog-1255608703.cos.ap-hongkong.myqcloud.com/favicons/browserconfig.xml">
     - <meta name="theme-color" content="#ffffff">
-    - <link rel="apple-touch-icon" sizes="180x180" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/apple-touch-icon.png">
-    - <link rel="icon" type="image/png" sizes="32x32" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/favicon-32x32.png">
-    - <link rel="icon" type="image/png" sizes="16x16" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/favicon-16x16.png">
-    - <link rel="manifest" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/site.webmanifest">
-    - <link rel="mask-icon" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    - <link rel="shortcut icon" href="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/favicon.ico">
+    - <link rel="apple-touch-icon" sizes="180x180" href="https://blog-1255608703.cos.ap-hongkong.myqcloud.com/favicons/apple-touch-icon.png">
+    - <link rel="icon" type="image/png" sizes="32x32" href="https://blog-1255608703.cos.ap-hongkong.myqcloud.com/favicons/favicon-32x32.png">
+    - <link rel="icon" type="image/png" sizes="16x16" href="https://blog-1255608703.cos.ap-hongkong.myqcloud.com/favicons/favicon-16x16.png">
+    - <link rel="manifest" href="https://blog-1255608703.cos.ap-hongkong.myqcloud.com/favicons/site.webmanifest">
+    - <link rel="mask-icon" href="https://blog-1255608703.cos.ap-hongkong.myqcloud.com/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    - <link rel="shortcut icon" href="https://blog-1255608703.cos.ap-hongkong.myqcloud.com/favicons/favicon.ico">
     - <meta name="apple-mobile-web-app-title" content="Volantis">
     - <meta name="application-name" content="Volantis">
     - <meta name="msapplication-TileColor" content="#f4f4f4">
-    - <meta name="msapplication-TileImage" content="https://blog-1255608703.cos.ap-nanjing.myqcloud.com/favicons/favicon-32x32.png">
+    - <meta name="msapplication-TileImage" content="https://blog-1255608703.cos.ap-hongkong.myqcloud.com/favicons/favicon-32x32.png">
     - '<meta name="theme-color" content="#f4f4f4" media="(prefers-color-scheme: light)">'
     - '<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">'
     - '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.css" integrity="sha384-1IGr2Yb8xuHjwTG+WoGjj2+I/a/N6z0gDD5YIGCQxywPROOKc3+orbn/R7arWQxD" crossorigin="anonymous">'

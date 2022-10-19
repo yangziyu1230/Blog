@@ -396,7 +396,7 @@ article:
       # 默认文章作者（可在 _data/author.yaml 中增加其他作者，并在 front-matter 中设置）
       # https://volantis.js.org/advanced-settings/#多人协同
       author:
-        avatar: https://blog-1255608703.cos.ap-nanjing.myqcloud.com/avatar.png
+        avatar: https://blog-1255608703.cos.ap-hongkong.myqcloud.com/avatar.png
         name: Dagest
         url: /
       # 文章创建日期
@@ -459,7 +459,7 @@ sidebar:
     blogger:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
-      avatar: https://blog-1255608703.cos.ap-nanjing.myqcloud.com/avatar.png
+      avatar: https://blog-1255608703.cos.ap-hongkong.myqcloud.com/avatar.png
       shape: circle # circle, rectangle
       url: /
       # title: Dagest
@@ -566,6 +566,15 @@ comments:
     server: https://classloader.cn/comments
     js: https://unpkg.com/artalk@2.4.2/dist/Artalk.js
     css: https://unpkg.com/artalk@2.4.2/dist/Artalk.css
+    imageUploader:
+      # 以兰空图床为例，下列填写内容为：
+      # url: 'https://xxxxxx/api/v1/upload'
+      # token: 'Bearer xxxxxxxxxxxxxx'
+      # resp: 'data.links.url'
+      enable: true
+      api: 'http://classloader:9000/api/v1/upload'
+      token: 'Bearer 2|lybjMCYAiiWis6cPVke0WasnaOrBhKeAK3KFvDY2'
+      resp: 'data.links.url'
 
 search:
   enable: true
