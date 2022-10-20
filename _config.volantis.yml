@@ -572,9 +572,9 @@ comments:
       # token: 'Bearer xxxxxxxxxxxxxx'
       # resp: 'data.links.url'
       enable: true
-      api: 'http://classloader:9000/api/v1/upload'
+      api: 'http://classloader.cn:9000/cos/upload'
       token: 'Bearer 2|lybjMCYAiiWis6cPVke0WasnaOrBhKeAK3KFvDY2'
-      resp: 'data.links.url'
+      resp: 'data'
 
 search:
   enable: true
