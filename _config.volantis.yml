@@ -572,7 +572,7 @@ comments:
       # token: 'Bearer xxxxxxxxxxxxxx'
       # resp: 'data.links.url'
       enable: true
-      api: 'http://classloader.cn:9000/cos/upload'
+      api: 'https://classloader.cn/qcloud/cos/upload'
       token: 'Bearer 2|lybjMCYAiiWis6cPVke0WasnaOrBhKeAK3KFvDY2'
       resp: 'data'
 
