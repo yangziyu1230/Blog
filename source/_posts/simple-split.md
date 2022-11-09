@@ -95,7 +95,7 @@ get_next(uint8_t *str, uint8_t *separator, size_t *pos)
 			{
 				for (size_t i = 0; i < separator_pos; i++)
 				{
-					token[token_pos++] = separator[i++];
+					token[token_pos++] = separator[i];
 				}
 			}
 			token[token_pos++] = 0;
