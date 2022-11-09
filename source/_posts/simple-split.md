@@ -90,6 +90,14 @@ get_next(uint8_t *str, uint8_t *separator, size_t *pos)
 	{
 		if (*pos >= strlen(str))
 		{
+			// 处于比较分隔符状态时读到EOF需要特殊处理
+			if (state == COMP_SEP_STATE)
+			{
+				for (size_t i = 0; i < separator_pos; i++)
+				{
+					token[token_pos++] = separator[i++];
+				}
+			}
 			token[token_pos++] = 0;
 			return token;
 		}
