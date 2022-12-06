@@ -99,7 +99,7 @@ OpenJDK 64-Bit Server VM (fastdebug build 12-internal+0-adhoc.ubuntu.jdk-jdk-12-
 
 ## 调试环境搭建
 
-### 系在并安装VSCode
+### 安装VSCode
 
 登录 https://code.visualstudio.com/ 网址进行下载，安装时一直下一步就可。
 
