@@ -9,7 +9,7 @@ categories: jvm
 
 ## 环境信息
 
-编译环境使用VMware Workstation创建的虚拟机配置为16C24G的腾讯云，具体信息如下：
+编译环境使用VMware Workstation创建的虚拟机，配置为16C24G，具体信息如下：
 
 <table border=1>
     <tr>
