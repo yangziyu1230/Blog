@@ -189,8 +189,8 @@ fs.inotify.max_user_watches=524288
 			"label": "C/C++: gcc 生成活动文件",
 			"command": "/usr/bin/make",
 			"args": [
-        "images"
-      ],
+                "images"
+            ],
 			"options": {},
 			"group": "build",
 			"detail": "make"
