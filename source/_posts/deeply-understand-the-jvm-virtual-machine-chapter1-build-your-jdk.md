@@ -151,6 +151,7 @@ fs.inotify.max_user_watches=524288
     "configurations": [
         {
             "name": "java -version",
+            "preLaunchTask": "make images",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/linux-x86_64-server-fastdebug/jdk/bin/java",
@@ -186,12 +187,14 @@ fs.inotify.max_user_watches=524288
 	"tasks": [
 		{
 			"type": "cppbuild",
-			"label": "C/C++: gcc 生成活动文件",
-			"command": "/usr/bin/make",
+			"label": "make images",
+			"command": "make",
 			"args": [
-                "images"
-            ],
-			"options": {},
+				"images"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
 			"group": "build",
 			"detail": "make"
 		}
