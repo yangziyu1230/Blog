@@ -101,7 +101,7 @@ OpenJDK 64-Bit Server VM (fastdebug build 12-internal+0-adhoc.ubuntu.jdk-jdk-12-
 
 ### 系在并安装VSCode
 
-登录https://code.visualstudio.com/网址进行下载，安装时一直下一步就可。
+登录 https://code.visualstudio.com/ 网址进行下载，安装时一直下一步就可。
 
 ### 连接Linux服务器
 
