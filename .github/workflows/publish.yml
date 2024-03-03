@@ -44,9 +44,9 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           scp_source: ./public/*
-          scp_target: /home/ubuntu/nginx/html/
+          scp_target: /home/root/nginx/html/
           before_script: |
-            rm -rf /home/ubuntu/nginx/html/*
+            rm -rf /home/root/nginx/html/*
           
           
         
