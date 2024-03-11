@@ -47,7 +47,3 @@ jobs:
           scp_target: /root/nginx/html/
           before_script: |
             rm -rf /root/nginx/html/*
-          
-          
-        
-      

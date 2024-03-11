@@ -1,10 +1,6 @@
 ---
-layout: docs
-seo_title: 关于
-bottom_meta: false
-sidebar: []
-twikoo:
-  placeholder: 有什么想对我说的呢？
+title: 标题
+layout: about
 ---
 
-下面写关于自己的内容
+这里写关于页的正文，支持 Markdown, HTML

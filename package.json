@@ -9,23 +9,22 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "5.4.2"
+    "version": "7.1.1"
   },
   "dependencies": {
-    "hexo": "^5.4.2",
-    "hexo-deployer-sftp": "^0.4.1",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
-    "hexo-generator-index": "^2.0.0",
-    "hexo-generator-json-content": "^4.2.3",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-helper-qrcode": "^1.0.2",
-    "hexo-related-popular-posts": "^5.0.1",
+    "@adobe/css-tools": "^4.3.3",
+    "hexo": "^7.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^3.0.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-pagination": "^3.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-markdown-it-plus": "^1.0.6",
-    "hexo-renderer-stylus": "^2.0.1",
+    "hexo-renderer-marked": "^6.0.0",
+    "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
-    "hexo-theme-volantis": "*",
-    "hexo-wordcount": "^6.0.1"
+    "hexo-theme-fluid": "^1.9.7",
+    "moment": "^2.30.1",
+    "nunjucks": "^3.2.4"
   }
 }

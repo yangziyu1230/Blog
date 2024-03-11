@@ -5,7 +5,9 @@ tags: jvm
 categories: jvm
 ---
 
-{% note::本内容由[《深入理解JVM虚拟机》](https://book.douban.com/subject/6522893/)和笔者自己的实践所得，有条件建议直接看书。阅读本内容需要亿点点c++及编译原理基础。 %}
+{% note warning %}
+本内容由[《深入理解JVM虚拟机》](https://book.douban.com/subject/6522893/)和笔者自己的实践所得，有条件建议直接看书。阅读本内容需要亿点点c++及编译原理基础。
+{% endnote %}
 
 ## 环境信息
 
@@ -54,7 +56,9 @@ jdk12源代码从github获取，链接地址如下：[jdk12-ga](https://codeload
 bash configure --enable-debug --with-jvm-variants=server
 ```
 
-{% note::若使用gcc8进行编译需增加--disable-warnings-as-errors参数 %}
+{% note warning %}
+若使用gcc8进行编译需增加--disable-warnings-as-errors参数
+{% endnote %}
 
 执行过程中会检查工具链及依赖，若有缺失会给出安装命令。若顺利执行则会输出如下所示的各种摘要信息：
 
